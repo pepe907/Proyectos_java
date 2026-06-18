@@ -1,16 +1,28 @@
 # Mis Proyectos en Java 🚀
 
-¡Hola! Este es mi repositorio donde voy subiendo lo que voy programando en Java mientras aprendo.
+¡Hola! Este es mi repositorio donde voy subiendo lo que voy programando en Java mientras aprendo y avanzo en mi formación.
 
 ---
 
-## 📞 1. Agenda de Contactos
+## 📞 1. Agenda de Contactos (Consola ➡️ API con Spring Boot) 🆕
 
-Este fue mi primer proyecto. Es una agenda simple en consola para guardar nombres y números de teléfono.
+Este proyecto nació inicialmente como una aplicación simple en consola para aprender las bases de Java, y posteriormente lo evolucioné a una **API REST funcional** utilizando **Spring Boot**.
 
-### 💡 Lo que aprendí:
-* **Manejo de ArrayList:** Aquí usé una lista dinámica (`ArrayList`) para guardar los contactos. Me sirvió un montón para entender cómo agregar y recorrer elementos con bucles `for` tradicionales.
-* **Lógica básica:** Ideal para afilar los primeros pasos en programación orientada a objetos (crear la clase `Contacto` y usar sus métodos).
+### 🔹 Fase 1: Versión de Consola (Java Puro)
+Fue mi primer acercamiento al lenguaje. Una agenda simple para guardar nombres y números de teléfono.
+* **Lo que aprendí:** Manejo de `ArrayList` dinámicos, bucles `for` tradicionales y fundamentos de Programación Orientada a Objetos (POO) creando la clase `Contacto`.
+
+### 🔹 Fase 2: Evolución a API REST (Spring Boot)
+Tomé la lógica del primer proyecto y la migré a un entorno backend moderno. Ahora, en lugar de un menú por consola, los contactos se gestionan mediante peticiones HTTP.
+* **Lo que aprendí:**
+    * **Arquitectura en Capas:** Separación de responsabilidades en Controlador (`Controller`), Servicio (`Service`) y Modelo (`Model`).
+    * **Endpoints REST:** Uso de anotaciones de Spring (`@GetMapping`, `@PostMapping`, `@DeleteMapping`) para interactuar con los datos en formato JSON desde herramientas como Postman o Insomnia.
+    * **Inyección de Dependencias:** Uso de `@Autowired` para conectar las capas de forma limpia y eficiente.
+
+#### 🛠️ Endpoints creados en la API:
+* `GET /contactos` ➡️ Devuelve la lista completa de contactos en formato JSON.
+* `POST /contactos` ➡️ Recibe un JSON con `nombre` y `telefono` para registrar uno nuevo.
+* `DELETE /contactos/{id}` ➡️ Elimina un contacto usando su índice posicional en la lista.
 
 ---
 
@@ -31,10 +43,10 @@ Este es un poco más avanzado. Es un programa para gestionar una tienda desde la
 
 ## ✉️ Contacto
 
-Si quieres escribirme o ver mis redes:
+Si quieres escribirme o ver mis redes, puedes encontrarme en:
 
-* **GitHub:** https://github.com/pepe907
-* **Mail:** agustincabezas1454@gmail.com
+* **GitHub:** [pepe907](https://github.com/pepe907)
+* **Mail:** [agustincabezas1454@gmail.com](mailto:agustincabezas1454@gmail.com)
 
 ---
-¡Gracias por pasar a ver! ☕🔥
+¡Gracias por pasar a ver mi progreso! ☕🔥
