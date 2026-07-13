@@ -41,6 +41,26 @@ Este es un poco más avanzado. Es un programa para gestionar una tienda desde la
 
 ---
 
+## 3 Veterinaria
+
+Veterinaria Proyecto de práctica
+
+Clases Creadas Animal, Animales, GestorDeAnimales
+
+Estoy usando ArrayList, Constructores, Métodos Por el momento esas son las herramientas que estamos
+usando
+
+Cada fin de semana actualizaremos este código agregándole más herramientas para que tenga un uso muy fácil para el
+usuario y que sea fácil de entender para otros desarrolladores
+
+Fecha de creación 13/07/2026
+última modificación 13/07/2026 - 12:32 PM
+
+Objetivo
+hacer un proyecto de aprendizaje aprender del proyecto hacerlo completo en java consola y despues pasarlo
+a sprint boot esto nos ayudará a aprender más con java y sprint boot
+
+
 ## Contacto
 
 Si quieres escribirme o ver mis redes, puedes encontrarme en:
