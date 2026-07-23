@@ -7,10 +7,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        GestorAnimales gestorAnimales = new GestorAnimales();
+        GestorDeMensajes gestorDeMensajes = new GestorDeMensajes();
+        GestorAnimales gestorAnimales = new GestorAnimales(gestorDeMensajes);
+        GestorCitas gestorCitas = new GestorCitas();
 
         String nombre, descripcion, rasa, fisico, temperamento;
-        int edad, opcionMenu, opcionInicio;
+        int edad, opcionMenu, opcionInicio, fecha;
 
         do {
             System.out.println(" ====== Bienvenido a Veterinaria ====== ");
@@ -27,7 +29,7 @@ public class Main {
             }else if (opcionInicio == 1){
                 System.out.println(" == Menu ==");
 
-                System.out.println(" \n2 Agregar \n3 Ver \n4 Buscar \n5 Editar \n6 Eliminar");
+                System.out.println(" \n2 Agregar \n3 Ver \n4 Buscar \n5 Editar \n6 Eliminar \n7 Citas");
                 opcionMenu = sc.nextInt();
                 sc.nextLine();
 
@@ -93,6 +95,33 @@ public class Main {
                         System.out.println(" =============================");
                         gestorAnimales.eliminarAnimal(nombre);
                     break;
+
+                    case 7:
+                        System.out.println("  =============================");
+                        System.out.println("  Pide tu Cita");
+                        System.out.println("  =============================");
+                        System.out.println("  Nombre: ");
+                        nombre = sc.nextLine();
+                        System.out.println("  Fecha: ");
+                        fecha = sc.nextInt();
+                        System.out.println("  Precio: ");
+                        double precio = sc.nextDouble();
+                        gestorCitas.apartarCita(nombre,fecha,precio);
+                        System.out.println("  =============================");
+                    break;
+
+                    case 8:
+                        System.out.println("  =============================");
+                        System.out.println("  Cancela tu cita ");
+                        System.out.println("  =============================");
+                        System.out.println("  Fecha: ");
+                        fecha = sc.nextInt();
+                        System.out.println("  Fecha: ");
+                        int fechaCita = sc.nextInt();
+                        System.out.println("  =============================");
+                        gestorCitas.cancelarCita(fechaCita, fecha);
+                    break;
+
                     default:
                         System.out.println(" opcion no valida ");
                     break;
